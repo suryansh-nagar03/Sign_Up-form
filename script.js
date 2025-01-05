@@ -20,7 +20,7 @@ document.querySelector(".sign-up-button").addEventListener("click", (e) => {
         console.log("error msg removed");
     }
 
-    if(pass==="" && cnfPass===""){
+    if(pass==="" || cnfPass===""){
         errorMsg.textContent = "*Password cannot be blank";
         errorMsg.style.color = "red";        
         errorMsg.style.fontSize = "14px";        
