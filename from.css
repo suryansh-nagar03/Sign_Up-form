@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(./fonts/Norse-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.workspace{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.left-container{
+    background-image: url('images/background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    color: white;
+    position: relative;
+}
+.banner{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 35%;
+    margin-bottom: 45%;
+    height: 20%;
+    background-color: rgba(10, 10, 10, 0.4);
+}
+.banner>img{
+    padding: 8px;
+    height: 89%;
+}
+.banner-text{
+    font-family: "MyFont",sans-serif;
+    font-size: 64px;
+}
+.right-container{
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(247, 244, 241);
+}
+.info-container{
+    padding: 3%;
+    background-color: rgb(247, 244, 241);
+}
+.info-container p{
+    font-weight: bold;
+    padding: 10px;
+}
+.form-container{
+    padding: 3%;
+    background-color: white;
+}
+.heading-text{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    
+}
+.name-container,
+.contact-details,
+.password-container {
+    margin-bottom: 20px;
+}
+
+.heading{
+    display: flex;
+    gap: 40px;
+}
+.heading p{
+    margin: 0;
+    font-size: 12px;
+    width: 210px;
+}
+.input-boxes{
+    width: 200px;
+    display: flex;
+    gap: 80px;  
+}
+input:focus{
+    border-color: rgb(64, 128, 202);
+    border-width: 2px;
+    border-style: solid;
+    outline: none;
+    border-radius: 4px;
+}
+input:invalid {
+    border-width: 2px;
+    border-style: solid;
+    outline: none;
+    border-radius: 4px;
+    border-color: #ef4444;
+}
+/* input:valid{
+    border-color: rgb(64, 128, 202);
+    border-width: 2px;
+    border-style: solid;
+    outline: none;
+    border-radius: 4px;
+} */
+.footer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 2%;
+    padding-left: 3%;
+    height: 17ex;
+}
+button{
+    color: white;
+    font-weight: bold;
+    width: 22%;
+    height:28px;
+    border-radius: 5px;
+    background-color: #596D48;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: rgb(43, 43, 177);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+.login-link{
+    padding-top: 10px;
+}
+button:hover {
+    background-color: #4e5e41;
+}
+
