@@ -1,7 +1,8 @@
 const errorMsg = document.getElementById("generate-error");
 function generateError(){
-    errorMsg.textContent = "*passwords do not match";
+    errorMsg.textContent = "*Passwords do not match";
     errorMsg.style.color = "red";
+    errorMsg.style.fontSize = "14px";
 }
 document.querySelector(".sign-up-button").addEventListener("click", (e) => {
     const pass = document.getElementById("pass").value;
@@ -17,5 +18,11 @@ document.querySelector(".sign-up-button").addEventListener("click", (e) => {
         console.log("pass equal");
         errorMsg.textContent = "";
         console.log("error msg removed");
+    }
+
+    if(pass==="" && cnfPass===""){
+        errorMsg.textContent = "*Password cannot be blank";
+        errorMsg.style.color = "red";        
+        errorMsg.style.fontSize = "14px";        
     }
 });
